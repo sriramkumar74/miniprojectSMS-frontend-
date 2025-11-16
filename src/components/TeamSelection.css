@@ -1,0 +1,81 @@
+
+.team-page {
+  height: 100vh;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.team-form {
+  /* margin-bottom: 25px;
+  display: flex;
+  gap: 10px; */
+  background: #ffffff;
+  padding: 25px 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.team-form input {
+  /* padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px; */
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  width: 80%;
+  transition: all 0.3s ease;
+}
+
+.team-form button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.team-form button:hover {
+  background-color: #0056b3;
+}
+
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.team-table th,
+.team-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #a71d2a;
+}

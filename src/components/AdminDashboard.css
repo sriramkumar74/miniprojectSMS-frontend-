@@ -1,0 +1,90 @@
+/* ===== Main Container ===== */
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #e3f2fd, #f8fafc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #1e293b;
+  padding: 40px 20px;
+}
+
+/* ===== Title ===== */
+.dashboard h2 {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #1e40af;
+  text-shadow: 1px 1px 3px rgba(30, 64, 175, 0.3);
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ===== Button Grid Layout ===== */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  width: 90%;
+  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Module Buttons ===== */
+.module-btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Hover Effect */
+.module-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(30, 64, 175, 0.4);
+}
+
+/* Click Effect */
+.module-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 5px 10px rgba(30, 64, 175, 0.3);
+}
+
+/* Emoji Style */
+.module-btn span {
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
+}
+
+.module-btn:hover span {
+  transform: scale(1.2);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .dashboard h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
+
+  .module-btn {
+    font-size: 1.1rem;
+    padding: 15px 20px;
+  }
+}
+
+

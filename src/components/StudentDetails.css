@@ -1,0 +1,136 @@
+/* =============================== */
+/* 🎓 Student Details Page Styling */
+/* =============================== */
+
+.student-page {
+  height: 100vh;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------------- */
+/* 🏷️ Page Title */
+/* ------------------------------- */
+.student-page h2 {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 14px 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------- */
+/* 🧾 Form Section */
+/* ------------------------------- */
+.student-form {
+  background: #ffffff;
+  padding: 25px 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.student-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ------------------------------- */
+/* ✏️ Input Fields */
+/* ------------------------------- */
+.student-form input {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  width: 80%;
+  transition: all 0.3s ease;
+}
+
+.student-form input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 6px rgba(0, 180, 216, 0.5);
+}
+
+/* ------------------------------- */
+/* 🔘 Verify Button */
+/* ------------------------------- */
+.student-form button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+.student-form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #009ffd, #2a2a72);
+  box-shadow: 0 5px 15px rgba(0, 180, 216, 0.5);
+}
+
+/* ------------------------------- */
+/* 💬 Message Box */
+/* ------------------------------- */
+.student-message {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ success and ❌ error message colors */
+.student-message.success {
+  color: #00ffae;
+}
+
+.student-message.error {
+  color: #ff5757;
+}
+
+/* ------------------------------- */
+/* 📱 Responsive Design */
+/* ------------------------------- */
+@media (max-width: 768px) {
+  .student-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .student-form input {
+    width: 100%;
+  }
+
+  .student-page h2 {
+    font-size: 24px;
+  }
+
+  .student-form button {
+    width: 100%;
+  }
+}

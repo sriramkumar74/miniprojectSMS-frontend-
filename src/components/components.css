@@ -1,0 +1,121 @@
+/* ====== General Page Setup ====== */
+body {
+  background-image: url("C:\Users\sriramkumar c\Downloads\miniprojectSMS-frontend--main\miniprojectSMS-frontend--main\public\spo.jpg");
+  font-family: 'Poppins', sans-serif;
+  background-repeat: no-repeat;             
+      background-size: cover;                   
+      background-position: center;              
+      background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== Login Container ====== */
+.login-container {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  padding: 40px 50px;
+  border-radius: 18px;
+  width: 380px;
+  text-align: center;
+  color: #fff;
+}
+
+
+/* ====== Heading ====== */
+.login-container h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:rgb(11, 11, 11);
+   
+}
+
+/* ====== Input Fields ====== */
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.login-container input:focus {
+  border: 2px solid #00e5ff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ====== Buttons ====== */
+.login-container button {
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #00dbde, #fc00ff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-container button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+/* ====== Message Text ====== */
+.login-container p {
+  margin-top: 12px;
+  color: #ffd700;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* ====== Button Groups ====== */
+.button-group {
+  margin-top: 15px;
+}
+
+.student-btn {
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+}
+
+.student-btn:hover {
+  background: linear-gradient(135deg, #96c93d, #00b09b);
+}
+
+.details-btn {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.details-btn:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* ====== Responsive (Mobile) ====== */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+
+  .login-container button {
+    font-size: 15px;
+  }
+}
+
+

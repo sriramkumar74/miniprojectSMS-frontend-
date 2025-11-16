@@ -1,0 +1,145 @@
+/* =============================== */
+/* 🏆 Match Details Page Styling */
+/* =============================== */
+
+.match-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------------- */
+/* 🏷️ Page Title */
+/* ------------------------------- */
+.match-page h2 {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 14px 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------- */
+/* 📝 Form Section */
+/* ------------------------------- */
+form {
+  background: #ffffff;
+  padding: 25px 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 90%;
+  max-width: 700px;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* 🎯 Input Fields */
+form input {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  width: 45%;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 6px rgba(0, 180, 216, 0.5);
+}
+
+/* 🟢 Submit Button */
+form button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #009ffd, #2a2a72);
+  box-shadow: 0 5px 15px rgba(0, 180, 216, 0.5);
+}
+
+/* ------------------------------- */
+/* 📊 Match Table Styling */
+/* ------------------------------- */
+table {
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 15px;
+}
+
+th {
+  background: #0072ff;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f7ff;
+}
+
+tbody tr:hover {
+  background-color: #e1f5ff;
+  transition: 0.3s ease;
+}
+
+/* ------------------------------- */
+/* 📱 Responsive Design */
+/* ------------------------------- */
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .match-page h2 {
+    font-size: 24px;
+  }
+}

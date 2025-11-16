@@ -1,0 +1,81 @@
+.event-page {
+  /* max-width: 900px;
+  overflow-y: auto;
+  margin: 40px auto;
+  
+  background:  linear-gradient(135deg, #00c6ff, #0072ff);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", sans-serif; */
+  height: 100vh;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.event-form input,
+.event-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.event-form button {
+  background-color: #0072ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.event-form button:hover {
+  background-color: #0057cc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #0072ff;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c1121f;
+}

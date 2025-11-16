@@ -1,0 +1,143 @@
+/* =============================== */
+/* 📊 DETAILS PAGE STYLING */
+/* =============================== */
+
+.details-page {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+/* =============================== */
+/* 🏷️ HEADER */
+/* =============================== */
+.details-page h2 {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 15px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* =============================== */
+/* 📁 SECTION CARD */
+/* =============================== */
+section {
+  background: #ffffff;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  padding: 25px 30px;
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* =============================== */
+/* 🧾 SECTION TITLE */
+/* =============================== */
+section h3 {
+  color: #2980b9;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  border-left: 5px solid #6dd5fa;
+  padding-left: 10px;
+}
+
+/* =============================== */
+/* 📋 TABLE STYLING */
+/* =============================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  font-size: 15px;
+}
+
+th {
+  background: linear-gradient(90deg, #2980b9, #6dd5fa);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+td {
+  background-color: #ffffff;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #f3f9ff;
+}
+
+tbody tr:hover td {
+  background-color: #e3f3ff;
+  transition: all 0.2s ease;
+}
+
+/* =============================== */
+/* 📱 RESPONSIVE DESIGN */
+/* =============================== */
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .details-page h2 {
+    font-size: 24px;
+  }
+
+  section h3 {
+    font-size: 18px;
+  }
+}
+
+/* =============================== */
+/* ✨ OPTIONAL SCROLLBAR STYLING */
+/* =============================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #e0f7ff;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2980b9, #6dd5fa);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #6dd5fa, #2980b9);
+}
+
